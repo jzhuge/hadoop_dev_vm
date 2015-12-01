@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+run_step() {
+	echo
+	echo "  === $@ ==="
+	echo
+}
+
+run_step "Provisioning Hadoop Development Environment"
+sudo apt-get update
+
+run_step "Installing Git"
+sudo apt-get install -y git
+
+run_step "Installing OpenJDK 7"
+sudo apt-get install -y openjdk-7-jdk
+
+run_step "Installing Maven"
+sudo apt-get -y install maven
+
+run_step "Installing Native Libraries"
+sudo apt-get -y install build-essential autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev
+
+run_step "Installing ProtocolBuffer 2.5.0"
+sudo apt-get -y install protobuf-compiler
+
+run_step "Installing Bats"
+git clone https://github.com/sstephenson/bats.git
+cd bats
+sudo ./install.sh /usr/local

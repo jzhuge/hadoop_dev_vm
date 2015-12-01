@@ -8,6 +8,8 @@ Set up Hadoop development environment, optonally in a Virtual Machine using Vagr
 	sudo python setup.py install
 
 ### Get Hadoop
+Change directory to "hadoop_dev", and run:
+
 	crepo sync
 
 ### Build Hadoop

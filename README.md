@@ -29,6 +29,6 @@ Install at least one provider, such as VirtualBox.
 	vagrant ssh
 
 ### Build Hadoop in the VM
-Change directory to "/vagrant/hadoop" (Vagrant automaticilly share /vagrant between the guest and the host), and run:
+Change directory to "/vagrant/hadoop" (Vagrant automaticilly creates shared folder "/vagrant"), and run:
 
 	mvn install -Pdist -DskipTests

@@ -1,4 +1,4 @@
-Set up an Hadoop Development Virtual Machine using Vagrant
+Set up an Hadoop Development Virtual Machine using Vagrant.
 
 ## Install Vagrant
 

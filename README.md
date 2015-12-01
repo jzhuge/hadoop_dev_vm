@@ -13,9 +13,9 @@ Set up Hadoop development environment, optonally in a Virtual Machine using Vagr
 ### Build Hadoop
 Change directory to "hadoop_dev/hadoop", and run:
 
-	mvn install -DskipTests -Pdist
+	mvn install -Pdist -DskipTests
 
-## Create a VM for Hadoop development
+## (Optional) Create a VM for Hadoop development
 
 ### Install Vagrant
 Install at least one provider, such as VirtualBox.
@@ -29,4 +29,4 @@ Install at least one provider, such as VirtualBox.
 ### Build Hadoop in the VM
 Change directory to "/vagrant/hadoop" (Vagrant automaticilly share /vagrant between the guest and the host), and run:
 
-	mvn install -DskipTests -Pdist
+	mvn install -Pdist -DskipTests

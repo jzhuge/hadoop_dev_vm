@@ -18,6 +18,6 @@ Set up an Hadoop Development Virtual Machine using Vagrant
 	vagrant ssh
 
 ## Build Hadoop
-* In the VM, change directory to "/vagrant/hadoop", and run:
+In the VM, change directory to "/vagrant/hadoop", and run:
 
 	mvn install -DskipTests -Pdist

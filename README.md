@@ -1,9 +1,8 @@
 Set up an Hadoop Development Virtual Machine using Vagrant
 
-## Prerequisite
-* Install Vagrant
-* Install crepo:
+## Install Vagrant
 
+## Install crepo
 	git clone https://github.com/cloudera/crepo
 	cd crepo
 	sudo python setup.py install

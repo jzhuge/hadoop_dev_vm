@@ -1,0 +1,9 @@
+{
+  "default-remote": "asflive",
+  "remotes":
+  { "asflive": { "fetch": "git://github.com/apache/%(name)s.git" },
+    "cdh": { "fetch": "git://github.mtv.cloudera.com/CDH/%(name)s.git" },
+    "gerrit": { "fetch": "ssh://jzhuge@gerrit.sjc.cloudera.com:29418/%(name)s" } },
+  "projects":
+  { "hadoop": { "track-branch": "trunk", "remotes": [ "asflive", "cdh", "gerrit" ] } }
+}

@@ -11,7 +11,7 @@ Set up Hadoop development environment, optonally in a Virtual Machine using Vagr
 	crepo sync
 
 ### Build Hadoop
-Change directory to "<hadoop_dev>/hadoop", and run:
+Change directory to "hadoop_dev/hadoop", and run:
 
 	mvn install -DskipTests -Pdist
 

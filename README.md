@@ -8,7 +8,7 @@ Set up Hadoop development environment, optonally in a Virtual Machine using Vagr
 	sudo python setup.py install
 
 ### Get Hadoop
-Change directory to "hadoop_dev", and run:
+Clone this repo. Change directory to "hadoop_dev", and run:
 
 	crepo sync
 
@@ -29,6 +29,6 @@ Install at least one provider, such as VirtualBox.
 	vagrant ssh
 
 ### Build Hadoop in the VM
-Change directory to "/vagrant/hadoop" (Vagrant automaticilly creates shared folder "/vagrant"), and run:
+Change directory to "/vagrant/hadoop" (Vagrant automaticilly shares the current host folder into the VM as "/vagrant"), and run:
 
 	mvn install -Pdist -DskipTests

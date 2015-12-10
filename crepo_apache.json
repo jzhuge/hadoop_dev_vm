@@ -1,7 +1,0 @@
-{
-  "default-remote": "asflive",
-  "remotes":
-  { "asflive": { "fetch": "git://github.com/apache/%(name)s.git" } },
-  "projects":
-  { "hadoop": { "track-branch": "trunk" } }
-}
